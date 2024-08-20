@@ -7,27 +7,33 @@
     <title>Encriptador de Texto</title>
 </head>
 <body>
-    <header>
-       <img class="logo" src="/imagenes/padi.jpeg" alt="Foto de perfil de Daniel Padilla">
+    <header class="header">
+       <img class="logo" src="/imagenes/padi.png" alt="Foto de perfil de Daniel Padilla">
     </header>
-    <main>
+    <main class="main">
         <section>
-            <textarea class="texto-input" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
-            <div>
-                <h6 class="indicacion">Solo letras minúsculas y sin acentos</h6>
+            <textarea class="texto__input" cols="38" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div class="indicacion">
+                <img class="indicacion__imagen" src="/imagenes/exclamacion.png" alt="Simbolo de exclamacion">
+                <h6 class="indicación__texto">Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
-                <button class="boton-encriptar">Encriptar</button>
-                <button class="boton-desencriptar">Desencriptar</button>
+                <button class="boton__encriptar">Encriptar</button>
+                <button class="boton__desencriptar">Desencriptar</button>
             </div>
         </section>
         <section>
-            <textarea class="texto-output" cols="20" rows="10"></textarea>
+            <textarea class="texto__output" cols="20" rows="10" readonly></textarea>
             <div>
-                <button class="boton-copiar">Copiar</button>
+                <button class="boton__copiar">Copiar</button>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <p class="datos__texto">Creado por Daniel Padilla Hinojosa 2024</p>
+        <a class="datos__link" href="#">Link 1</a>
+        <a class="datos__link" href="#">Link 2</a>
+    </footer>
 <script src="/app.js"></script>
 </body>
 </html>
