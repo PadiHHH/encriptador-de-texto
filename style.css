@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    background: #F3F5FC;
     font-family: "Saira", sans-serif;
     line-height: 150%;
     overflow-y: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background-color: #F3F5FC
+}
+
+.header{
+    background-color: #F3F5FC;
 }
 
 .logo{
@@ -20,9 +29,11 @@ main{
     display: flex;
     margin-bottom: 50px;
     margin-left: 180px;
+    background-color: #F3F5FC;
 }
 
 .texto__input{
+    background-color: #F3F5FC;
     border: none;
     color: #0A3871;
     margin-top: 90;
@@ -114,10 +125,31 @@ main{
 
 .footer{
     background-color: #0A3871;
-    padding: 1.5rem;
+    padding: 0.5rem;
     font-size: 0.75rem;
     font-weight: 400;
     text-align: center;
+}
+
+.datos__texto{
+    background-color: transparent;
+    color: #D8DFE8;
+    font-size: 1rem;
+    margin-top: 1px;
+}
+
+.datos__link{
+    background-color: #0A3871;
+}
+
+.datos__link__linkedin{
+    height: 40px;
+    width: 40px;
+}
+
+.datos__link__github{
+    height: 37px;
+    width: 37px;
 }
 
 @media (max-width: 1200px) {
