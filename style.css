@@ -9,7 +9,8 @@
 }
 
 .body{
-    background-color: #F3F5FC
+    background-color: #F3F5FC;
+    height: 100vh;
 }
 
 .header{
@@ -27,7 +28,7 @@
 
 main{
     display: flex;
-    margin-bottom: 50px;
+    margin-bottom: 74px;
     margin-left: 180px;
     background-color: #F3F5FC;
 }
@@ -36,11 +37,12 @@ main{
     background-color: #F3F5FC;
     border: none;
     color: #0A3871;
-    margin-top: 90;
+    margin-top: 0;
+    margin-left: 240px;
     text-transform: lowercase;
     resize: none;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2rem;
 }
 ::placeholder{ color: #0A3871;}
     .texto-input:focus{
@@ -51,16 +53,19 @@ main{
     background: white;
     background-image: url(/imagenes/muneco.png);
     background-repeat: no-repeat;
+    background-position: center center;
     border: none;
     border-radius: 32px;
     color: #495057;
-    margin-left: 98px;
-    margin-top: 20px;
+    margin-left: 100px;
+    margin-top: -100px;
     padding-left: 20px;
     position: fixed;
     resize: none;
     pointer-events: none;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 836px;
 }
 .mensaje:focus {
     outline: none;
@@ -69,8 +74,9 @@ main{
 .botones{
     display: flex;
     margin-top: 18px;
+    margin-left: 240px;
     gap: 24px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -100,15 +106,17 @@ main{
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
+    margin-left: 140px;
+    margin-top: 618px;
     position: absolute;
     width: 336px;
+    background-color: transparent;
 }
 
 .indicacion {
     display: flex;
     align-items: center;
+    margin-left: 240px;
 }
 
 .indicación__texto{
@@ -125,7 +133,7 @@ main{
 
 .footer{
     background-color: #0A3871;
-    padding: 0.5rem;
+    padding: 8px;
     font-size: 0.75rem;
     font-weight: 400;
     text-align: center;
