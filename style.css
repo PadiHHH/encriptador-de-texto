@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --fuente-saira: "Saira", sans-serif;
+
+    --color-fondo: #F5EDED;
+    --color-secundario: #6482AD;
+    --color-terciario: #E2DAD6;
+}
+
 *{
-    font-family: "Saira", sans-serif;
+    font-family: var(--fuente-saira);
     line-height: 150%;
     overflow-y: hidden;
     padding: 0;
@@ -10,13 +18,13 @@
 }
 
 .body{
-    background-color: #F3F5FC;
+    background-color: var(--color-fondo);
     height: 100vh;
     box-sizing: border-box;
 }
 
 .header{
-    background-color: #F3F5FC;
+    background-color: var(--color-fondo);
 }
 
 .logo{
@@ -31,15 +39,15 @@
 main{
     display: flex;
     margin-left: 1%;
-    background-color: #F3F5FC;
+    background-color: var(--color-fondo);
     height: 79%;
     gap: 10px;
 }
 
 .texto__input{
-    background-color: #F3F5FC;
+    background-color: var(--color-fondo);
     border: none;
-    color: #0A3871;
+    color: var(--color-secundario);
     margin-top: 1%;
     margin-left: 26%;
     text-transform: lowercase;
@@ -48,7 +56,7 @@ main{
     font-size: 2rem;
     gap: 10px;
 }
-::placeholder{ color: #0A3871;}
+::placeholder{ color: var(--color-secundario);}
     .texto-input:focus{
         outline: none;
     }
@@ -57,10 +65,9 @@ main{
     background: white;
     border: none;
     border-radius: 32px;
-    color: #495057;
+    color: var(--color-secundario);
     position: absolute;
     resize: none;
-    pointer-events: none;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
@@ -93,20 +100,23 @@ main{
     font-weight: 400;
     font-size: 1.5rem;
     border: none;
+    display: none;
+    margin-bottom: 10%;
 }
 
 .texto__output__titulo{
     width: 60%;
+    margin-top: 80%;
     font-weight: 700;
     font-size: 1.5rem;
-    color: #343A40;
+    color: var(--color-secundario);
 }
 
 .texto__output__parrafo{
     width: 80%;
     font-weight: 400;
     font-size: 1rem;
-    color: #495057;
+    color: var(--color-secundario);
 }
 
 .seccion__output__imagen{
@@ -126,8 +136,8 @@ main{
 }
 
 .boton__encriptar{
-    background-color: #0A3871;
-    border: 1px solid #0A3871;
+    background-color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
     border-radius: 24px;
     color: white;
     cursor: pointer;
@@ -136,19 +146,19 @@ main{
 }
 
 .boton__desencriptar{
-    background-color: #D8DFE8;
-    border: 1px solid #0A3871;
+    background-color: var(--color-terciario);
+    border: 1px solid var(--color-secundario);
     border-radius: 24px;
-    color: #0A3871;
+    color: var(--color-secundario);
     cursor: pointer;
     height: 67px;
     width: 328px;
 }
 
 .boton__copiar{
-    border: 1px solid #0A3871;
+    border: 1px solid var(--color-secundario);
     border-radius: 24px;
-    color: #0A3871;
+    color: var(--color-secundario);
     cursor: pointer;
     height: 67px;
     margin-top: 141%;
@@ -165,7 +175,7 @@ main{
 }
 
 .indicación__texto{
-    color: #495057;
+    color: var(--color-secundario);
     font-size: 0.75rem;
     font-weight: 400;
 }
@@ -177,7 +187,7 @@ main{
 }
 
 .footer{
-    background-color: #0A3871;
+    background-color: var(--color-secundario);
     font-size: 0.75rem;
     font-weight: 400;
     display: flex;
@@ -188,14 +198,14 @@ main{
 
 .datos__texto{
     background-color: transparent;
-    color: #D8DFE8;
+    color: var(--color-terciario);
     font-size: 1rem;
     margin-top: 1px;
     text-align: center;
 }
 
 .datos__link{
-    background-color: #0A3871;
+    background-color: var(--color-secundario);
     display: flex;
 }
 
