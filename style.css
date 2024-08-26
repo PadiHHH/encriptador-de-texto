@@ -44,6 +44,11 @@ main{
     gap: 10px;
 }
 
+.seccion__input{
+    position: relative;
+    height: 90%;
+}
+
 .texto__input{
     background-color: var(--color-fondo);
     border: none;
@@ -129,7 +134,7 @@ main{
 .botones{
     display: flex;
     margin-top: 1%;
-    padding-left: 240px;
+    padding-left: 15rem;
     gap: 24px;
     font-size: 1rem;
     font-weight: 400;
@@ -171,7 +176,7 @@ main{
 .indicacion {
     display: flex;
     align-items: center;
-    margin-left: 240px;
+    margin-left: 32%;
 }
 
 .indicación__texto{
@@ -183,7 +188,7 @@ main{
 .indicacion__imagen{
     height: 16px;
     width: 16px;
-    margin-right: 8px;
+    margin-right: 2%;
 }
 
 .footer{
@@ -219,6 +224,136 @@ main{
     width: 37px;
 }
 
-@media (max-width: 1200px) {
+/*Media Query para Tablet*/
+@media (max-width: 800px){
 
+    .main{
+       display: flex;
+       flex-direction: column;
+    }
+
+    .texto__input{
+        margin-top: 1%;
+        margin-left: 5%;
+    }
+
+    .indicacion {
+        margin-left: 5%;
+        margin-bottom: 1%;
+    }
+
+    .indicacion__imagen{
+        margin-right: 1%;
+    }
+
+    .botones{
+        margin-top: 0%;
+        padding-left: 2.5rem;
+    }
+
+    .boton__copiar{
+        height: 20%;
+        margin-top: 25%;
+        width: 50%;
+    }
+
+    .seccion__output{
+        height: 22%;
+        width: 88%;
+        margin-top: 88%;
+        margin-left: 5%;
+    }
+
+    .texto__output{
+        padding: 1%;
+        margin-top: 1%;
+    }
+
+    .texto__output__titulo{
+        width: 100%;
+        margin-top: -5%;
+    }
+    
+    .texto__output__parrafo{
+        width: 100%;
+    }
+    
+    .seccion__output__imagen{
+        display: none;
+    }
+    
+
+    .footer{
+        padding: 1rem;
+        margin-top: 6%;
+        width: 100%;
+    }
+}
+
+/*Media Query para Celular*/
+@media (max-width: 480px){
+
+    .main{
+       display: flex;
+       flex-direction: column;
+    }
+
+    .texto__input{
+        margin-top: 1%;
+        margin-left: 1%;
+        height: 50%;
+        width: 97%;
+    }
+
+    .indicacion {
+        margin-left: 10%;
+        margin-bottom: 1%;
+    }
+
+    .indicacion__imagen{
+        margin-right: 1%;
+    }
+
+    .botones{
+        margin-top: 1%;
+        padding-right: 3rem;
+    }
+
+    .boton__copiar{
+        height: 20%;
+        margin-top: 30%;
+        width: 50%;
+    }
+
+    .seccion__output{
+        height: 20%;
+        width: 88%;
+        margin-top: 105%;
+        margin-left: 5%;
+    }
+
+    .texto__output{
+        padding: 1%;
+        margin-top: 1%;
+    }
+
+    .texto__output__titulo{
+        width: 100%;
+        margin-top: -5%;
+    }
+    
+    .texto__output__parrafo{
+        width: 100%;
+    }
+    
+    .seccion__output__imagen{
+        display: none;
+    }
+    
+
+    .footer{
+        padding: 1rem;
+        margin-top: 05%;
+        width: 100%;
+    }
 }
